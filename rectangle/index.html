@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" max-width='2000' max-height='1000' style="border: 1px solid black"></canvas>
+    <script>
+        let Rectangle = function (width, height) {
+            this.width = width;
+            this.height = height;
+            this.getCanvas = function () {
+                let c = document.getElementById('myCanvas');
+                let ctx = c.getContext('2d');
+                ctx.fillRect(0, 0, width, height);
+            }
+            this.getPer = function () {
+                return (width + height) * 2;
+            }
+            this.getArea = function () {
+                return width * height;
+            }
+        };
+        let a = parseInt(prompt('Nhâp chiều rộng : '));
+        let b = parseInt(prompt('Nhâp chiều dài : '));
+        let rectangle = new Rectangle(a, b);
+        rectangle.getCanvas();
+        let perimeter = rectangle.getPer();
+        let area = rectangle.getArea();
+        document.write('<br />'+'Chu vi là :' + perimeter );
+        document.write( '<br />'+'Diện tích :' + area);
+    </script>
+</body>
+
+</html>

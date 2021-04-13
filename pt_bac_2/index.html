@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+    var a ,b ,c;
+    a = parseInt(prompt("nhập vào số A: "));
+    b = parseInt(prompt("nhập vào số B: "));
+    c = parseInt(prompt("nhập vào số C: "));
+    var dt= b * b - 4 * a * c;
+    if (a==0 && b==0){
+        console.log("phương trình vô số nghiệm")
+    }
+    else if ((a==0 &&b!=0) || dt < 0){
+        console.log("Phương trình vô nghiệm.");
+    } else if (dt==0){
+        var x=-b/2*a;
+        console.log("phương trình có nghiệm kép là ",x);
+    } else {
+        var c2dt = Math. sqrt(dt);
+        x1 = (-b+c2dt)/(2*a);
+        x2 = (-b-c2dt)/(2*a);
+        console.log("phương trình có 2 nghiệm x1= ",x1);
+        console.log("phương trình có 2 nghiệm x2= ",x2);
+    }
+        </script>
+    </body>
+</html>

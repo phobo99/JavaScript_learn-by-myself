@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HIỂN THỊ SỐ NGUYÊN TỐ TỪ 1-100</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+
+            for (var a=1;a<100;a++){
+                let count=0;
+                for (var i=2;i<=Math.sqrt(a);i++){
+                    if(a%i==0){
+                        count++;
+                    }
+                }
+                if(count==0){
+                    document.write(a,"</br>")
+                }
+            }
+        </script>
+    </body>
+</html>

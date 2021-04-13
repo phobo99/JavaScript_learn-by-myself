@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÌM SỐ NHỎ NHẤT TRONG MẢNG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim so nho nhat</title>
+</head>
+<body>
+    <script>
+        let a = ['1','2','4','7','9'];
+        let max=a[0]; min=a[0];
+        for (let i=0;i<a.length;i++){
+            if(max < a[i]){
+                max=a[i];
+            }
+            if(min>a[i]){
+                min=a[i];
+            }
+        }
+        alert('số nhỏ nhất là '+min+',số lớn nhất là '+max);
+    </script>
+</body>
+</html>

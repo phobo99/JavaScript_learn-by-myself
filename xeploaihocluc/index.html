@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("Nhập vào điểm tổng kết kì 1"));
+        var b = parseInt(prompt("Nhập vào điểm tổng kết kì 2"));
+        var c = (a+b)/2;
+
+        if(  c >= 8.5 && c <= 10 ){
+            alert("Đạt học sinh giỏi")
+        }else if(  c < 8.5 && 6.5 <= c ){
+            alert("Đạt học sinh khá")
+        }else if( c <= 5 && 3 <= c ){
+            alert("Đạt học sinh trung bình")
+        }else if( c < 3 ){
+            alert("Đạt học sinh kém và phải ở lại lớp")
+        }else{
+            alert("Nhập điểm sai nhập lại điểm")
+            var a = parseInt(prompt("Nhập vào điểm tổng kết kì 1"));
+            var b = parseInt(prompt("Nhập vào điểm tổng kết kì 2"));
+        }
+    </script>
+</body>
+</html>

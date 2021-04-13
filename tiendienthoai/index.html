@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sophut = parseInt(prompt("Nhập vào số phút đã gọi:"))
+        var phi =  0 ;
+        var sum  ;
+        var phicodinh = 25 ;
+        if( sophut > 200){
+            phi = (sophut - 200)*200 + 150*400 + 50*600
+        }else if( sophut > 50){
+            phi = (sophut - 50)*400 + 50*600
+        }else{
+            phi = sophut * 600 ;
+        }
+        sum = phi*0.01 + phicodinh 
+        alert(`Bạn đã gọi được ${sophut} phút Số tiền bạn phải trả là ${sum}k`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhap 2 so tinh tong neu so dau nho hon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // nếu số đầu >= số sau thì hiện ra màn hình
+        // còn nếu mà số đầu < số sau thì tính tổng
+        var tong=0;
+        function index(a,b){
+            if (a>=b){
+                alert(a+">"+b);
+            } else {
+                tong=a+b;
+                alert("tổng hai só là "+tong);
+            }
+        }
+        let a= parseInt(prompt("nhập số đầu"));
+        let b= parseInt(prompt("nhập số sau"));
+        index(a,b);
+    </script>
+</body>
+</html>

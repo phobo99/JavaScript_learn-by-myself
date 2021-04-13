@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra mảng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIỂM TRA MẢNG</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        Viết hàm truyền vào một mảng kí tự, và một kí tự bất kì
+        Kiểm tra xem ký tự bất kì có nằm trong mảng hay không
+        Nếu có trả về số lần xuất hiện của kí tự đó , nếu không thì trả về -1
+        1- Nhập vào mảng Array
+        2- nhập vào kí tự a
+        3- for để duyêt mảng Array nếu gặp a thì count tăng lên 1, không có trả về -1
+        4- hiển thị ra
+        */
+        var dem = 0;
+        function message(kt, arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (kt == arr[i]) {
+                    dem++;
+                }
+            } if (dem == 0) {
+                document.write("-1");
+            } if (dem >= 1) {
+                document.write("kí tự nằm trong mảng và xuất hiện " + dem + " lần");
+            }
+        }
+        var a = prompt("nhập vào kí tự");
+        var b = ["a", "b", "c", "d", "a", "f"];
+        message(a, b)
+    </script>
+</body>
+
+</html>

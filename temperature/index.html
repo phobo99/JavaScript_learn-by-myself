@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Hiển thị ra màn hình nhiệt độ F và độ Kenvin tương ứng</h1>
+
+<body>
+    <script>
+        let Temparature = function (c) {
+            this.c = c;
+            if (c >= -273) {
+                this.getF = function () {
+                    return (c * 1.8) + 32;
+                }
+                this.getK = function () {
+                    return c + 273.15;
+                }
+            }
+            else {
+                alert("bạn đã nhập sai");
+                c = prompt("nhập lại nhiệt độ");
+            }
+        }
+        let a = parseInt(prompt("nhập vào nhiệt độ :"));
+        let tempara = new Temparature(a);
+        let f = tempara.getF();
+        let kelvin = tempara.getK();
+        alert("với nhiệt độ " + a + " tương ứng với " + f + "F và " + kelvin + " kelvin");
+
+    </script>
+</body>
+
+</html>
