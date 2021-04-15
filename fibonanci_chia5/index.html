@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>TÌM SỐ ĐẦU TIÊN TRONG DÃY FIBONANCI CHIA HÊT CHO 5</title>
@@ -7,26 +8,27 @@
     <title>chia het cho 5</title>
 
 </head>
+
 <body>
     <script>
-        var f0 , f1 , fn , n ;
-         n = parseInt(prompt("Nhập số thứ tự "))
-         f0 = 0 ;
-         f1 = 1 ;
-         fn = 0 ;
-        for(var i = 0 ; i  <= n ; i++ ){
-            if( i < 2 ){
-                document.write(i," , ");
-                if( i % 5 == 0 ){
+        var f0, f1, fn, n;
+        n = parseInt(prompt("Nhập số thứ tự "))
+        f0 = 0;
+        f1 = 1;
+        fn = 0;
+        for (var i = 0; i <= n; i++) {
+            if (i < 2) {
+                document.write(i, " , ");
+                if (i % 5 == 0) {
                     document.write("Số đầu tiên chia hết cho 5")
                     break;
                 }
-            }else{
-                fn = f0 + f1 ;
-                f0 = f1 ;
-                f1 = fn ;
-                document.write(fn," , ")
-                if( fn % 5 == 0){
+            } else {
+                fn = f0 + f1;
+                f0 = f1;
+                f1 = fn;
+                document.write(fn, " , ")
+                if (fn % 5 == 0) {
                     document.write("Số đầu tiên chia hết cho 5")
                     break;
                 }
@@ -34,4 +36,5 @@
         }
     </script>
 </body>
+
 </html>
